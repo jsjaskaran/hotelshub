@@ -1,0 +1,43 @@
+<!-- this template is used to show list items -->
+<!-- like can be used on community/questions -->
+
+<%
+discountPrice = function(p, d){	
+	return Math.floor(p - (p * d)/100)
+}
+filterLocation = function(loc){
+	var t = loc.split(','),
+		tlen = t.length;
+	
+	return t[t.length - 3] + ', ' + t[t.length - 2];
+}
+%>
+
+<% content.forEach(function(d) { %>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+	<div class="card">
+		<div class="card-main">
+			<div class="card-img">
+				<img alt="<%- d.name%>" src="<%- d.image %>">
+				<p class="card-img-heading">
+					<%- d.name %> <a class="btn btn-blue waves-attach waves-button waves-effect"><%- d.rating %><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				</p>
+			</div>
+			<p><a class="fbtn" target="_blank" href="<%- d.link %>"><i class="fa fa-paper-plane" aria-hidden="true"></i></a></p>
+			<div class="card-inner">
+				<p>
+					Locality: <b><%- filterLocation(d.location) %></b>
+				</p>
+				<p>
+					Price: <span class="actual_price"><i class="fa fa-inr" aria-hidden="true"></i><%- d.actual_price %></span> <span><i class="fa fa-inr" aria-hidden="true"></i><%- discountPrice(d.actual_price, d.discount) %></span>
+				</p>
+				<p>
+					<a class="fbtn fbtn-alt"><%- d.discount %>%</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% }); %>

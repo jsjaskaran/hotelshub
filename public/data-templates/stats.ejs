@@ -1,0 +1,18 @@
+<div class="card">
+	<div class="card-main">
+		<div class="card-inner">
+			<p class="card-heading">Stats</p>
+			<p>
+				<b>Avg. Rating:</b> <%- content['average-rating'] %> <br>
+				<b>API Hits:</b> <%- content['api-hits'] %> <br>
+				<b>Max./Min. Price:</b> <%-content.price.Maximum %>/<%- content.price.Minimum %>
+			</p>
+			<p>
+				<b>Area Distribution:</b>
+				<% content['area-wise-hotel-distribution'].forEach(function(d){%>
+					<%- d['_id'] %> : <%- d['count'] %>, 
+				<% });%>
+			</p>
+		</div>
+	</div>
+</div>

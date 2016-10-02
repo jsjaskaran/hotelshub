@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <% include partials/head %>
+  
+</head>
+<body class="avoid-fout page-blue">
+
+  <div class="content">
+    <div class="content-heading">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-lg-push-3 col-sm-10 col-sm-push-1">
+            <h1 class="heading">HotelsHub</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row stats-content">
+        
+      </div>
+
+      <div class="row search-form-filter">
+        <div class="card">
+          <div class="card-main">
+            <div class="card-inner">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-6 col-md-8 col-sm-10 search-box">
+                    <form id="search-hotels">
+                      <input class="form-control form-control-default" id="main-search" type="search" placeholder="Search....">
+                    </form>
+                  </div>
+                  <div class="col-lg-6 col-md-4 col-sm-2">
+                    <a class="search-now btn btn-green waves-attach waves-button waves-light waves-effect">Search</a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-2 col-md-3 col-sm-4">
+                    <span class="form-label">Sort by</span>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="radio radio-inline">
+                      <label for="input-radio-inline-1">
+                        <input class="sort-radio" id="rating-radio" data-sort-name="rating" name="sort-results" type="radio">Rating
+                      </label>
+                    </div>
+                    <div class="radio radio-inline">
+                      <label for="input-radio-inline-2">
+                        <input class="sort-radio" id="price-radio" data-sort-name="price" name="sort-results" type="radio">Price
+                      </label>
+                    </div>
+                    <!-- <div class="radio radio-inline">
+                      <label for="input-radio-inline-3">
+                        <input id="input-radio-inline-3" name="input-radio-inline" type="radio">Option 3
+                      </label>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <section class="content-inner all-results">
+          
+          <div class="progress-circular progress-circular-alt progress-circular-center">
+            <div class="progress-circular-wrapper">
+              <div class="progress-circular-inner">
+                <div class="progress-circular-left">
+                  <div class="progress-circular-spinner"></div>
+                </div>
+                <div class="progress-circular-gap"></div>
+                <div class="progress-circular-right">
+                  <div class="progress-circular-spinner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+      </div>
+      <div class="row">
+        <div class="pagination">
+          <ul class="breadcrumb">
+            <li>
+              <a data-href="1">Page 1</a>
+            </li>
+            <li>
+              <a data-href="2">Page 2</a>
+            </li>
+            <li>
+              <a data-href="3">Page 3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <% include partials/footer %>
+
+</body>
+</html>
