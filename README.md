@@ -3,20 +3,20 @@ treebo hotels full stack developer hackerearth challenge
 
 This api is currently hosted on Heroku and database is hosted on mlab, for further testing use the following url:
 
-[HotelsHub](https://toppr-got-battles-api.herokuapp.com/)
+[HotelsHub](https://hotelshub.herokuapp.com/)
 
 ### Routes are as follows
 
 1. Get complete list
-   * https://toppr-got-battles-api.herokuapp.com/list
+   * https://hotelshub.herokuapp.com/list
 2. Get list with pagination/filters
-   * https://toppr-got-battles-api.herokuapp.com/list?page=2
-   * https://toppr-got-battles-api.herokuapp.com/list?sortBy=price
-   * https://toppr-got-battles-api.herokuapp.com/list?page=3&sortBy=rating
+   * https://hotelshub.herokuapp.com/list?page=2
+   * https://hotelshub.herokuapp.com/list?sortBy=price
+   * https://hotelshub.herokuapp.com/list?page=3&sortBy=rating
 3. Get stats
-   * https://toppr-got-battles-api.herokuapp.com/stats
+   * https://hotelshub.herokuapp.com/stats
 4. Search
-   * https://toppr-got-battles-api.herokuapp.com/search?query=tree
+   * https://hotelshub.herokuapp.com/search?query=tree
 
 ### Side note: 
    Check screenshots folder for visual details.
