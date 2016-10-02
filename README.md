@@ -32,10 +32,10 @@ Create an account and new Database on mlab under free version. Add credentials i
 5. Create a repository on bitbucket or github.
 6. Download and install heroku toolbelt.
 7. Inside your app folder on local, type following commands:
-   * git init
-   * git remote add origin <url to git repo ending with .git>
-   * git push -u origin --all
-   * heroku login, and fill in your credentials
-   * heroku git:remote -a <app-name from heroku>
-   * git push heroku master
+	git init
+	git remote add origin url_to_git_repo_ending-with_.git
+	git push -u origin --all
+	heroku login, and fill in your credentials
+	heroku git:remote -a app-name_from_heroku
+	git push heroku master
 8. Your app is now hosted on Heroku, you can check by visiting <app-name from heroku>.herokuapp.com
